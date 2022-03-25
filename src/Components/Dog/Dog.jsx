@@ -9,11 +9,13 @@ const Dog = ({ dog }) => {
         <div className='card'>
             <img src={url} alt="" />
             <div className="card-body">
+                <div>
                 <h2>{name}</h2>
                 <p className='lead'><strong>Category:</strong> {bred_for}</p>
                 <p className='lead'><strong>characteristics:</strong> {temperament}</p>
-                <div>
-                    <p>Life-Span: {life_span}</p>
+               </div>
+                <div className='cart-footer'>
+                    <p>Life-Span:🐕 {life_span}</p>
                     <AiFillHeart className='btn'/>
                 </div>
             </div>

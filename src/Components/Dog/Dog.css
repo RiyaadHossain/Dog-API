@@ -1,6 +1,6 @@
 .card {
   width: 300px;
-  height: 660px;
+  height: 600px;
   border: 1px solid #2a414f;
   position: relative;
   border-radius: 8px;
@@ -18,12 +18,20 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 147px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
 }
 .lead {
   font-size: 18px;
   margin: 6px 0;
 }
-
+.cart-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .btn {
   border-radius: 50%;
   border: none;
