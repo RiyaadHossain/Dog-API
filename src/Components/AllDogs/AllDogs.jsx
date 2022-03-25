@@ -1,20 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { getDB } from "../../Database/Database";
 import Dog from "../Dog/Dog";
 import Liked from "../Liked/Liked";
 import "./AllDogs.css";
 
 const AllDogs = () => {
   const [dogs, setDogs] = useState([]);
-  const [like, setLike] = useState([])
-  const youLiked = (dog) => {
-    const newLike = [...like, dog]
-    setLike(newLike)
-  }
+  const [like, setLike] = useState([]);
   useEffect(() => {
     fetch("https://api.thedogapi.com/v1/breeds")
-      .then((res) => res.json())
-      .then((data) => setDogs(data));
+    .then((res) => res.json())
+    .then((data) => setDogs(data));
   }, []);
+
+  useEffect(() => {
+    // const dataBase = getDB()
+
+  }, [])
+  
+  const youLiked = (dog) => {
+    console.log(dog);
+    const newLike = [...like, dog]
+    setLike(newLike)
+    getDB(dog.id)
+  }
   return (
     <div className="main-container">
       <div className="dog-container">

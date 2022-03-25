@@ -10,7 +10,7 @@ const Dog = ({ dog, youLiked }) => {
             <div className="card-body">
                 <div>
                 <h2>{name}</h2>
-                <p className='lead'><strong>Category:</strong> {bred_for}</p>
+                <p className='lead'><strong>Utility:</strong> {bred_for}</p>
                 <p className='lead'><strong>characteristics:</strong> {temperament}</p>
                </div>
                 <div className='cart-footer'>
