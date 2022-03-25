@@ -1,0 +1,38 @@
+.card {
+  width: 300px;
+  height: 660px;
+  border: 1px solid #2a414f;
+  position: relative;
+  border-radius: 8px;
+  text-align: left;
+}
+img {
+  width: 286px;
+  height: 286px;
+  margin: 7px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 147px;
+}
+.lead {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.btn {
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  background-color: #18dcff;
+  color: #000;
+  text-align: center;
+}
+.btn:hover {
+  color: #18dcff;
+  background-color: #000;
+}
