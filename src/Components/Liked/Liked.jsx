@@ -1,7 +1,6 @@
 import React from 'react';
 import LikedDog from '../LikedDog/LikedDog';
 import { AiTwotoneHeart } from 'react-icons/ai';
-
 import './Liked.css'
 
 const Liked = ({ like }) => {

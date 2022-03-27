@@ -11,6 +11,8 @@
 }
 .liked-dog{
     background-color: lightskyblue;
+    position: sticky;
+    top: 0;
 }
 @media screen and (max-width:1250px) {
     .main-container{
