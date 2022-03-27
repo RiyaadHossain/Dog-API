@@ -1,0 +1,12 @@
+.liked-dog{
+    display: flex;
+}
+.liked-dog img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin-right: 5px;
+    border-radius: 50%;
+    align-items: center;
+}

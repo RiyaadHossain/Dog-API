@@ -35,10 +35,11 @@ img {
 .btn {
   border-radius: 50%;
   border: none;
-  padding: 10px;
+  padding: 8px;
   background-color: #18dcff;
   color: #000;
   text-align: center;
+  line-height: 0;
 }
 .btn:hover {
   color: #18dcff;

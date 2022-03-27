@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getDB } from "../../Database/Database";
+import { addToDB } from "../../Database/Database";
 import Dog from "../Dog/Dog";
 import Liked from "../Liked/Liked";
 import "./AllDogs.css";
@@ -22,7 +22,7 @@ const AllDogs = () => {
     console.log(dog);
     const newLike = [...like, dog]
     setLike(newLike)
-    getDB(dog.id)
+    addToDB(dog.id)
   }
   return (
     <div className="main-container">

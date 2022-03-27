@@ -15,7 +15,7 @@ const Dog = ({ dog, youLiked }) => {
                </div>
                 <div className='cart-footer'>
                     <p>Life-Span:🐕 {life_span}</p>
-                    <AiFillHeart onClick={() => youLiked(dog)} className='btn'/>
+                    <button  onClick={() => youLiked(dog)}  className='btn'><AiFillHeart/></button>
                 </div>
             </div>
         </div>

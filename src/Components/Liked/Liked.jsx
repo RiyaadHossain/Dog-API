@@ -1,13 +1,19 @@
 import React from 'react';
+import LikedDog from '../LikedDog/LikedDog';
+import { AiTwotoneHeart } from 'react-icons/ai';
+
 import './Liked.css'
 
 const Liked = ({ like }) => {
     return (
         <div className='liked-container'>
-            <h2>Summary</h2>
+            <h2 style={{textAlign:'center'}}>Summary</h2>
             <div className="liked-body">
-                <p><strong>Likes: </strong>{like.length}</p>
-                <p><strong>You Liked: </strong>{like.map(lik => <li key={lik.id}>➡️{lik.name}</li>)}</p>
+                <p className='heart'><strong>Likes: </strong>{like.length}<AiTwotoneHeart/> </p>
+                <strong>You Liked: </strong>
+                {
+                    like.map(likedItem => <LikedDog key={like.id} likedItem={likedItem}/>)
+                }
             </div>
         </div>
     );

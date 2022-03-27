@@ -1,4 +1,4 @@
-const getDB = (id) => {
+const addToDB = (id) => {
     
   // Get the Server Data
   let cart = [];
@@ -17,4 +17,4 @@ const getDB = (id) => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-export { getDB };
+export { addToDB };

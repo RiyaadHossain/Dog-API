@@ -2,12 +2,16 @@
     position: sticky;
     top: 0;
 }
-.liked-container h2{
+.liked-container > h2{
     text-align: center;
 }
 .liked-body{
     padding-left: 20px;
 }
-li{
-    list-style: none;
+.heart{
+    display: flex; 
+    align-items: center;
+}
+.heart strong {
+    margin: 0 5px;
 }
