@@ -11,7 +11,8 @@ const Liked = ({ like }) => {
                 <p className='heart'><strong>Likes: </strong>{like.length}<AiTwotoneHeart/> </p>
                 <strong>You Liked: </strong>
                 {
-                    like.map(likedItem => <LikedDog key={like.id} likedItem={likedItem}/>)
+                    like.map(likedItem =>
+                        <LikedDog key={likedItem.id} likedItem={likedItem} />)
                 }
             </div>
         </div>

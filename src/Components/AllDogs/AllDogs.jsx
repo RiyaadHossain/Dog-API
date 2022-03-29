@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { addToDB } from "../../Database/Database";
+import { addToDB, getDB } from "../../Database/Database";
 import Dog from "../Dog/Dog";
 import Liked from "../Liked/Liked";
 import "./AllDogs.css";
@@ -14,8 +14,16 @@ const AllDogs = () => {
   }, []);
 
   useEffect(() => {
-    // const dataBase = getDB()
-  }, []);
+    const dataBase = getDB()
+    let storedDog = []
+    for (const id in dataBase) {
+      const previousDog = dogs.find(dog => dog.name === id)
+      if (previousDog) {
+        storedDog.push(previousDog)
+      }
+    }
+    setLike(storedDog)
+  }, [dogs]);
 
   const youLiked = (dog) => {
     const newLike = [...like, dog];

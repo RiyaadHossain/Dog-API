@@ -1,3 +1,7 @@
+const getDB = () => {
+  return JSON.parse(localStorage.getItem('cart'))
+}
+
 const addToDB = (id) => {
     
   // Get the Server Data
@@ -9,8 +13,7 @@ const addToDB = (id) => {
 
   // Set the Data Value
   cart[id] = 1
-  console.log(cart[id]);
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-export { addToDB };
+export { addToDB, getDB };
